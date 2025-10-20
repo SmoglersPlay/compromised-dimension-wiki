@@ -1,0 +1,321 @@
+/* --- ESTILOS GLOBALES Y BASE --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* --- BARRA DE NAVEGACIÓN --- */
+.navbar {
+    background-color: #000;
+    padding: 10px 20px;
+    border-bottom: 2px solid #b71c1c;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2em;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff4d4d;
+}
+
+.navbar a.nav-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* --- ENCABEZADO DE LA PÁGINA PRINCIPAL --- */
+header {
+    padding: 80px 20px 40px 20px; /* Espacio superior para que no lo tape la navbar */
+    background-color: #000;
+    border-bottom: 3px solid #b71c1c;
+}
+
+header h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #ff4d4d;
+    font-size: 3.5em;
+    text-shadow: 0 0 10px #ff0000;
+    margin: 0;
+}
+
+.description {
+    max-width: 800px;
+    margin: 15px auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* --- SECCIONES DE PERSONAJES (PÁGINA PRINCIPAL) --- */
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2.5em;
+    color: #fff;
+    border-bottom: 2px solid #b71c1c;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.character-card {
+    background-color: #1f1f1f;
+    border: 2px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.character-link {
+    text-decoration: none; /* Quitamos el subrayado del enlace */
+}
+
+.character-link:hover .character-card {
+    transform: translateY(-10px);
+    border-color: #ff4d4d;
+}
+
+.character-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+.character-card h3 {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #ff4d4d;
+    font-size: 1.8em;
+    margin: 15px 0 10px;
+}
+
+/* --- PÁGINA DE DETALLE DE PERSONAJE --- */
+.character-page-body {
+    text-align: left;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 20px;
+    padding-top: 80px; /* Espacio superior para que no lo tape la navbar */
+    color: #ff4d4d;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.character-detail-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.character-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 2px solid #b71c1c;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.character-main-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #444;
+}
+
+.character-title h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #ff4d4d;
+    font-size: 4em;
+    text-shadow: 0 0 10px #ff0000;
+    margin: 0;
+    line-height: 1;
+}
+
+.character-subtitle {
+    font-size: 1.5em;
+    color: #aaa;
+    margin: 5px 0 0;
+}
+
+.character-info h2 {
+    text-align: center;
+}
+
+.lore-text {
+    font-size: 1.1em;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.abilities-list .ability-item {
+    background-color: #252525;
+    border-left: 4px solid #b71c1c;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+.abilities-list h3 {
+    margin: 0 0 5px 0;
+    color: #ff4d4d;
+    font-size: 1.5em;
+}
+
+/* --- DISEÑO RESPONSIVO --- */
+@media (max-width: 600px) {
+    .character-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .character-page-body {
+        text-align: center;
+    }
+    .lore-text {
+        text-align: left;
+    }
+}
+
+/*
+=====================================================
+=== TEMAS PERSONALIZADOS PARA CADA PERSONAJE ========
+=====================================================
+*/
+
+.information-skill{
+    color: #5dade2;
+}
+
+/* --- TEMA PARA SMOGLERS (Tonos Amarillos y Azules) --- */
+.theme-smoglers .character-title h1 {
+    color: #FFC300; /* Amarillo resplandeciente */
+    /* Este es el truco para el brillo: una sombra de texto del mismo color */
+    text-shadow: 0 0 8px #ffc300c0, 0 0 12px #ffc300a0;
+}
+
+.theme-smoglers .character-subtitle {
+    color: #fa0c0c; /* Rojo centinela*/
+}
+
+.theme-smoglers .character-ability {
+    color: #FFC300; /* Un azul lindo y claro */
+}
+
+.theme-smoglers .abilities-list .ability-item {
+    border-left-color: #5dade2; /* Borde de habilidad azul */
+}
+
+.theme-smoglers .back-link {
+    color: #ffffff;
+}
+
+.theme-smoglers {
+    background: linear-gradient(to bottom, #7fedfc, #121212);
+    background-attachment: fixed; /* Esto evita que el degradado se repita si la página es muy larga */
+}
+
+
+
+/* --- ESTILOS ADICIONALES PARA DETALLES DE HABILIDADES --- */
+
+.ability-item .flavor-text {
+    font-style: italic;
+    color: #aaa;
+    margin-bottom: 15px;
+    text-size-adjust: 10px;
+    border-left: 2px solid #555;
+    padding-left: 10px;
+}
+
+.ability-item .cooldown {
+    font-size: 0.7em;
+    color: #ccc;
+    font-weight: normal;
+}
+
+.ability-item ul {
+    list-style-type: '» '; /* Cambia el punto de la lista por un símbolo */
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.ability-item li {
+    padding-left: 10px;
+    margin-bottom: 8px;
+}
+
+
+/* --- TEMA PARA FAKER (Tonos Morados con Glitch) --- */
+.theme-faker .character-title h1 {
+    color: #a966ff; /* Un morado vibrante */
+    /* Efecto "glitch" con sombras de texto cian y magenta */
+    text-shadow: 2px 2px 0px #00ffff, -2px -2px 0px #ff00ff;
+}
+
+.theme-faker .character-subtitle {
+    color: #d1b3ff; /* Morado más claro */
+}
+
+.theme-faker .abilities-list .ability-item {
+    border-left-color: #a966ff; /* Borde de habilidad morado */
+}
+
+.theme-faker .back-link {
+    color: #a966ff;
+}
+
+/* Puedes seguir añadiendo más temas aquí para cada personaje...
+    .theme-dash { ... }
+    .theme-akuma { ... }
+*/
