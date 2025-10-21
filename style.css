@@ -1,30 +1,11 @@
-/* --- COLORES DE CATEGORÍA DE SUPERVIVIENTE --- */
-
-.cat-centinela {
-    color: #fa0c0c;
-    font-weight: bold;
-}
-
-.cat-tramperos {
-    color: #ff7b00;
-    font-weight: bold;
-}
-
-.cat-versatiles {
-    color: #206eff;
-    font-weight: bold;
-}
-
-.cat-apoyo {
-    color: #15ff00;
-    font-weight: bold;
-}
-
+.nombre-personaje .cat-centinela { color: #fa0c0c; }
+.nombre-personaje .cat-tramperos { color: #ff7b00; }
+.nombre-personaje .cat-versatiles { color: #206eff; }
+.nombre-personaje .cat-apoyo { color: #15ff00; }
 /* --- ESTILOS GLOBALES Y BASE --- */
 html {
     scroll-behavior: smooth;
 }
-
 body {
     background-color: #121212;
     color: #e0e0e0;
@@ -44,18 +25,12 @@ body {
     top: 0;
     z-index: 100;
 }
-
-.navbar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.navbar ul { 
+    margin: 0; padding: 0; list-style: none; 
 }
-
-.navbar li {
-    display: inline-block;
-    margin: 0 15px;
+.navbar li { 
+    display: inline-block; margin: 0 15px; 
 }
-
 .navbar a {
     color: #e0e0e0;
     text-decoration: none;
@@ -64,24 +39,19 @@ body {
     padding: 10px;
     transition: color 0.3s ease;
 }
-
-.navbar a:hover {
-    color: #ff4d4d;
+.navbar a:hover { 
+    color: #ff4d4d; 
 }
-
-.navbar a.nav-brand {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #fff;
+.navbar a.nav-brand { 
+    font-size: 1.5em; font-weight: bold; color: #fff; 
 }
 
 /* --- ENCABEZADO DE LA PÁGINA PRINCIPAL --- */
 header {
-    padding: 80px 20px 40px 20px; /* Espacio superior para que no lo tape la navbar */
+    padding: 80px 20px 40px 20px;
     background-color: #000;
     border-bottom: 3px solid #b71c1c;
 }
-
 header h1 {
     font-family: 'Chakra Petch', sans-serif;
     color: #ff4d4d;
@@ -89,7 +59,6 @@ header h1 {
     text-shadow: 0 0 10px #ff0000;
     margin: 0;
 }
-
 .descripcion {
     max-width: 800px;
     margin: 15px auto;
@@ -98,10 +67,9 @@ header h1 {
 }
 
 /* --- SECCIONES DE PERSONAJES (PÁGINA PRINCIPAL) --- */
-section {
-    padding: 40px 20px;
+section { 
+    padding: 40px 20px; 
 }
-
 h2 {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 2.5em;
@@ -111,7 +79,6 @@ h2 {
     padding-bottom: 10px;
     margin-bottom: 40px;
 }
-
 .tabla-de-caracteres {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -119,7 +86,6 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .tarjeta-de-personaje {
     background-color: #1f1f1f;
     border: 2px solid #444;
@@ -127,23 +93,14 @@ h2 {
     padding: 20px;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
-
-.enlace-de-carácter {
-    text-decoration: none; /* Quitamos el subrayado del enlace */
+.enlace-de-carácter { 
+    text-decoration: none; 
 }
-
 .enlace-de-carácter:hover .tarjeta-de-personaje {
     transform: translateY(-10px);
     border-color: #ff4d4d;
 }
-
-.tarjeta-de-personaje img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    border: 1px solid #333;
-}
-
+.tarjeta-de-personaje img { max-width: 100%; height: auto; border-radius: 5px; border: 1px solid #333; }
 .tarjeta-de-personaje h3 {
     font-family: 'Chakra Petch', sans-serif;
     color: #ff4d4d;
@@ -152,24 +109,21 @@ h2 {
 }
 
 /* --- PÁGINA DE DETALLE DE PERSONAJE --- */
-.cuerpo-página-personaje {
-    text-align: left;
+.cuerpo-página-personaje { 
+    text-align: left; 
 }
-
 .enlace-de-retroceso {
     display: inline-block;
     margin: 20px;
-    padding-top: 80px; /* Espacio superior para que no lo tape la navbar */
-    color: #ff4d4d;
+    padding-top: 80px;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.2em;
     font-family: 'Chakra Petch', sans-serif;
 }
-
-.enlace-de-retroceso:hover {
-    text-decoration: underline;
+.enlace-de-retroceso:hover { 
+    text-decoration: underline; 
 }
-
 .contenedor-detalle-carácter {
     max-width: 900px;
     margin: 20px auto;
@@ -178,7 +132,6 @@ h2 {
     border: 1px solid #333;
     border-radius: 8px;
 }
-
 .cabecera-de-carácter {
     display: flex;
     align-items: center;
@@ -187,7 +140,6 @@ h2 {
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
-
 .imagen-principal-personaje {
     width: 200px;
     height: 200px;
@@ -195,58 +147,57 @@ h2 {
     border-radius: 50%;
     border: 4px solid #444;
 }
-
-.título-del-personaje h1 {
+/* === ESTILOS BASE PARA EL TÍTULO Y SUBTÍTULO (CORREGIDO) === */
+.nombre-personaje h1 {
     font-family: 'Chakra Petch', sans-serif;
-    color: #ff4d4d;
-    font-size: 4em;
+    color: #ff4d4d; /* Color por defecto */
+    font-size: 5em;
     text-shadow: 0 0 10px #ff0000;
     margin: 0;
     line-height: 1;
 }
-
-.subtítulo-del-personaje {
-    font-size: 1.5em;
-    color: #aaa;
+.nombre-personaje p { /* Regla única y clara para la categoría/subtítulo */
+    font-size: 2em;
+    font-weight: bold;
     margin: 5px 0 0;
+    color: #aaa; /* Color por defecto si no tiene clase de categoría */
 }
 
 .información-del-personaje h2 {
-    text-align: center;
+    color: #87CEEB;
 }
-
-.texto-lore {
-    font-size: 1.1em;
-    line-height: 1.7;
-    text-align: justify;
+.texto-lore { 
+    font-size: 1.1em; line-height: 1.7; text-align: justify; 
 }
-
 .lista-de-habilidades .habilidad-objeto {
     background-color: #252525;
-    border-left: 4px solid #b71c1c;
+    border-left: 4px solid #0c4bfa;
     padding: 15px 20px;
     margin-bottom: 15px;
     border-radius: 0 5px 5px 0;
 }
-
 .lista-de-habilidades h3 {
-    margin: 0 0 5px 0;
-    color: #ff4d4d;
-    font-size: 1.5em;
+    color: #14fa0c; /* Verde "Activo" */
+    font-size: 1.5em; /* Le devolvemos su tamaño */
+    margin: 0 0 5px 0; /* Y su margen para mejor espaciado */
 }
-
-/* --- DISEÑO RESPONSIVO --- */
-@media (max-width: 600px) {
-    .cabecera-de-carácter {
-        flex-direction: column;
-        text-align: center;
-    }
-    .cuerpo-página-personaje {
-        text-align: center;
-    }
-    .texto-lore {
-        text-align: left;
-    }
+/* --- ESTILOS ADICIONALES PARA DETALLES DE HABILIDADES --- */
+.habilidad-objeto .texto-descriptivo {
+    font-style: italic;
+    color: #aaa;
+    margin-bottom: 15px;
+    font-size: 15px;
+    border-left: 2px solid #555;
+    padding-left: 10px;
+}
+.habilidad-objeto .cooldown { 
+    font-size: 0.7em; color: #ccc; font-weight: normal; 
+}
+.habilidad-objeto ul { 
+    list-style-type: '» '; padding-left: 20px; margin-top: 10px; 
+}
+.habilidad-objeto li { 
+    padding-left: 10px; margin-bottom: 8px; 
 }
 
 /*
@@ -255,129 +206,42 @@ h2 {
 =====================================================
 */
 
-/*
-=====================================================
-=====================SMOGLERS========================
-=====================================================
-*/
-.tema-smoglers .capacidad-de-personaje{
-    color: #5dade2;
+/* --- TEMA SMOGLERS --- */
+.tema-smoglers {
+    background: linear-gradient(to bottom, #000000, #FFC300);
+    background-attachment: fixed;
 }
-
 .tema-smoglers .nombre-personaje h1 {
     color: #FFC300;
     text-shadow: 0 0 8px #ffc300c0, 0 0 12px #ffc300a0;
 }
-
-.tema-smoglers .cat-centinela {
-    color: #fa0c0c;
-    font-weight: bold;
-}
-
-.tema-smoglers .habilidad-de-personaje {
-    color: #15ff00;
-}
-
 .tema-smoglers .lista-de-habilidades .habilidad-objeto {
-    border-left-color: #5dade2;
+    border-left-color: #114364;
 }
 
-.tema-smoglers .enlace-de-retroceso {
-    color: #ffffff;
-}
-
-.tema-smoglers {
-    background: linear-gradient(to bottom, #7fedfc, #121212);
-    background-attachment: fixed; /* Esto evita que el degradado se repita si la página es muy larga */
-}
-
-/*
-=====================================================
-========================AKUMA========================
-=====================================================
-*/
-
-.tema-akuma .capacidad-de-personaje{
-    color: #5dade2;
-}
-
-
-.tema-akuma .nombre-personaje h1 {
-    color: #ffffff;
-    text-shadow: 0 0 8px #a4a2ffc0, 0 0 12px #bff0ffa0;
-}
-
-.tema-akuma .cat-centinela {
-    color: #fa0c0c;
-    font-weight: bold;
-}
-
-.tema-akuma .habilidad-de-personaje {
-    color: #15ff00;
-}
-
-.tema-akuma .lista-de-habilidades .habilidad-objeto {
-    border-left-color: #5dade2;
-}
-
-.tema-akuma .enlace-de-retroceso {
-    color: #ffffff;
-}
-
+/* --- TEMA AKUMA (CORREGIDO) --- */
 .tema-akuma {
     background: linear-gradient(to bottom, #000000, #ffffff);
-    background-attachment: fixed; /* Esto evita que el degradado se repita si la página es muy larga */
+    background-attachment: fixed;
 }
-
-/* --- ESTILOS ADICIONALES PARA DETALLES DE HABILIDADES --- */
-
-.habilidad-objeto .texto-descriptivo {
-    font-style: italic;
-    color: #aaa;
-    margin-bottom: 15px;
-    text-size-adjust: 10px;
-    border-left: 2px solid #555;
-    padding-left: 10px;
+.tema-akuma .nombre-personaje h1 {
+    color: #ffffff;
+    text-shadow: 0 0 8px #2b4a53c0, 0 0 12px #5a9fb1a0;
 }
-
-.habilidad-objeto .cooldown {
-    font-size: 0.7em;
-    color: #ccc;
-    font-weight: normal;
-}
-
-.habilidad-objeto ul {
-    list-style-type: '» '; /* Cambia el punto de la lista por un símbolo */
-    padding-left: 20px;
-    margin-top: 10px;
-}
-
-.habilidad-objeto li {
-    padding-left: 10px;
-    margin-bottom: 8px;
+.tema-akuma .cabecera-de-carácter {
+    border-bottom-color: #fa0c0c;
 }
 
 
-/* --- TEMA PARA FAKER (Tonos Morados con Glitch) --- */
-.tema-faker .título-del-personaje h1 {
-    color: #a966ff; /* Un morado vibrante */
-    /* Efecto "glitch" con sombras de texto cian y magenta */
-    text-shadow: 2px 2px 0px #00ffff, -2px -2px 0px #ff00ff;
+/* --- DISEÑO RESPONSIVO --- */
+@media (max-width: 600px) {
+    .cabecera-de-carácter { 
+        flex-direction: column; text-align: center; 
+    }
+    .cuerpo-página-personaje { 
+        text-align: center; 
+    }
+    .texto-lore { 
+        text-align: left; 
+    }
 }
-
-.tema-faker .subtítulo-del-personaje {
-    color: #d1b3ff; /* Morado más claro */
-}
-
-.theme-faker .lista-de-habilidades .habilidad-objeto {
-    border-left-color: #a966ff; /* Borde de habilidad morado */
-}
-
-.tema-faker .enlace-de-retroceso {
-    color: #a966ff;
-}
-
-/* Puedes seguir añadiendo más temas aquí para cada personaje...
-    .theme-dash { ... }
-    .theme-akuma { ... }
-*/
