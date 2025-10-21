@@ -150,9 +150,7 @@ h2 {
 /* === ESTILOS BASE PARA EL TÍTULO Y SUBTÍTULO (CORREGIDO) === */
 .nombre-personaje h1 {
     font-family: 'Chakra Petch', sans-serif;
-    color: #ff4d4d; /* Color por defecto */
     font-size: 5em;
-    text-shadow: 0 0 10px #ff0000;
     margin: 0;
     line-height: 1;
 }
@@ -215,23 +213,35 @@ h2 {
     color: #FFC300;
     text-shadow: 0 0 8px #ffc300c0, 0 0 12px #ffc300a0;
 }
-.tema-smoglers .lista-de-habilidades .habilidad-objeto {
-    border-left-color: #114364;
+.tema-smoglers .cabecera-de-carácter {
+    border-bottom-color: #FFC300;
 }
 
-/* --- TEMA AKUMA (CORREGIDO) --- */
+/* --- TEMA AKUMA --- */
 .tema-akuma {
     background: linear-gradient(to bottom, #000000, #ffffff);
     background-attachment: fixed;
 }
 .tema-akuma .nombre-personaje h1 {
     color: #ffffff;
-    text-shadow: 0 0 8px #2b4a53c0, 0 0 12px #5a9fb1a0;
+    text-shadow: 0 0 8px #718b92c0, 0 0 12px #404d50a0;
 }
 .tema-akuma .cabecera-de-carácter {
-    border-bottom-color: #fa0c0c;
+    border-bottom-color: #ffffff;
 }
 
+/* --- TEMA AKUMA --- */
+.tema-dash {
+    background: linear-gradient(to bottom, #000000, #ff0055);
+    background-attachment: fixed;
+}
+.tema-dash .nombre-personaje h1 {
+    color: #ff0055;
+    text-shadow: 0 0 8px #ff0022c0, 0 0 12px #e729f8a0;
+}
+.tema-dash .cabecera-de-carácter {
+    border-bottom-color: #ffffff;
+}
 
 /* --- DISEÑO RESPONSIVO --- */
 @media (max-width: 600px) {
