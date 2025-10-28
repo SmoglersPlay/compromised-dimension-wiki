@@ -1,0 +1,162 @@
+/* --- ESTILOS DE PÁGINA DE DETALLE DE PERSONAJE --- */
+
+/* Clases de color para las categorías de supervivientes */
+.nombre-superviviente .cat-centinela { color: #fa0c0c; }
+.nombre-superviviente .cat-tramperos { color: #ff7b00; }
+.nombre-superviviente .cat-versatiles { color: #206eff; }
+.nombre-superviviente .cat-apoyo { color: #15ff00; }
+
+/* --- PÁGINA DE DETALLE DE PERSONAJE --- */
+.cuerpo-página-personaje { 
+    text-align: left; 
+}
+.enlace-de-retroceso {
+    display: inline-block;
+    margin: 20px;
+    padding-top: 80px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.enlace-de-retroceso:hover { 
+    text-decoration: underline; 
+}
+.contenedor-detalle-carácter {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 2px;
+}
+.cabecera-de-carácter {
+    display: flex; 
+    align-items: center;
+    gap: 30px;
+    border-bottom: 2px solid #b71c1c;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.imagen-principal-personaje {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #444;
+}
+/* === ESTILOS BASE PARA EL TÍTULO Y SUBTÍTULO (CORREGIDO) === */
+.nombre-superviviente h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 5em;
+    margin: 0;
+    line-height: 1;
+}
+.nombre-superviviente p { /* Regla única y clara para la categoría/subtítulo */
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 5px 0 0;
+    color: #aaa; /* Color por defecto si no tiene clase de categoría */
+}
+
+.información-del-personaje h2 {
+    color: #87CEEB;
+}
+.texto-lore {
+    color: #ffffff;
+    font-size: 1.1em; 
+    line-height: 1.4;
+    text-align: left; 
+}
+.texto-cosas { 
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2em;
+    margin: 15px 0 15px;
+}
+.lista-de-habilidades .habilidad-objeto {
+    background-color: #252525;
+    border-left: 6px solid #0c4bfa;
+    padding: 15px 20px;
+    margin-bottom: 50px;
+    border-radius: 0 5px 5px 0;
+}
+.lista-de-habilidades h3 {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #14fa0c; /* Verde "Activo" */
+    font-size: 1.8em; /* Le devolvemos su tamaño */
+    margin: 0 0 0 0; /* Y  su margen para mejor espaciado */
+}
+/* --- ESTILOS ADICIONALES PARA DETALLES DE HABILIDADES --- */
+.habilidad-objeto .cooldown { 
+    font-size: 0.7em; 
+    color: #bbbbbb; 
+    font-weight: normal; 
+}
+.habilidad-objeto{
+    color: #ffffff;
+    font-size: 1.1em; 
+    line-height: 1.4;
+    text-align: left; 
+}
+.habilidad-objeto .texto-descriptivo {
+    font-style: italic;
+    color: #b4b4b4;
+    margin-bottom: 0px;
+    font-size: 1.2em;
+    line-height: 1.4;
+    border-left: 2px solid #555;
+    padding-left: 15px;
+}
+.habilidad-objeto ul { 
+    list-style-type: '» '; 
+    padding-left: 10px; 
+    margin-top: 10px; 
+}
+.habilidad-objeto li { 
+    padding-left: 10px; 
+    margin-bottom: 10px; 
+}
+
+/* --- TEMAS PERSONALIZADOS (ejemplos) --- */
+
+/*(SMOGLERS)*/
+.tema-smoglers {
+    background: linear-gradient(to bottom, #000000, #FFC300);
+    background-attachment: fixed;
+}
+.tema-smoglers .nombre-superviviente h1 {
+    color: #FFC300;
+    text-shadow: 0 0 8px #ffc300c0, 0 0 12px #ffc300a0;
+}
+.tema-smoglers .cabecera-de-carácter {
+    border-bottom-color: #87ffeb;
+}
+
+/*(AKUMA)*/
+.tema-akuma {
+    background: linear-gradient(to bottom, #000000, #dfdfdf);
+    background-attachment: fixed;
+}
+.tema-akuma .nombre-superviviente h1 {
+    color: #ffffff;
+    text-shadow: 0 0 8px #7e7e7ec0, 0 0 12px #b3b1ada0;
+}
+.tema-akuma .cabecera-de-carácter {
+    border-bottom-color: #87ffeb;
+}
+
+/*(DASH)*/
+.tema-dash {
+    background: linear-gradient(to bottom, #000000, #ff3535);
+    background-attachment: fixed;
+}
+.tema-dash .nombre-superviviente h1 {
+    color: #ff0055;
+    text-shadow: 0 0 8px #ff0080c0, 0 0 12px #ff00dda0;
+}
+.tema-dash .cabecera-de-carácter {
+    border-bottom-color: #87ffeb;
+}
+
+/* ...otros temas... */

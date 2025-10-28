@@ -4,125 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compromised Dimension - Wiki Oficial</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style-global.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Roboto:wght@400;700" rel="stylesheet">
 </head>
-<body>
 
-<nav class="navbar">
+<body class="cuerpo-principal">
+
+    <nav class="navbar">
         <ul>
-            <li><a href="index.html" class="nav-brand">Compromised Dimension</a></li>
-            <li><a href="#survivors">Supervivientes</a></li>
-            <li><a href="#killers">Asesinos</a></li>
+            <li><a href="index.html" class="nav-brand">Inicio</a></li>
+            <li><a href="supervivientes-index.html">Supervivientes</a></li>
+            <li><a href="asesinos-index.html">Asesinos</a></li>
         </ul>
-</nav>
+    </nav>
 
-    <header>
-        <h1>COMPROMISED DIMENSION</h1>
-        <p class="descripcion">
-Bienvenido a Compromised Dimension, una brutal experiencia de terror asimétrico 8v1.
-<br>
-Un único y poderoso Asesino debe dar caza a un escuadrón de hasta ocho Supervivientes en partidas frenéticas y de tiempo limitado.
-<br>
-Tu supervivencia es una carrera contra el reloj.
-<br>
-<strong>A LOS 80 SEGUNDOS</strong>
-<br>
-las Brechas de escape se abren, ofreciendo la primera oportunidad de huir. Si no logras escapar por ellas, deberás encontrar una salida alternativa antes de que el Asesino acabe contigo.
-<br>
-Elige tu rol y selecciona un personaje de un amplio elenco. 
-<br>
-Cada Superviviente y Asesino cuenta con habilidades únicas que definen tu estilo de juego y estrategia. 
-<br>
-<strong>¿Cazarás o serás cazado?</strong>
-        </p>
-    </header>
+    <div class="contenedor-wiki-principal">
 
-    <main>
-        <section id="survivors">
-            <h2>SUPERVIVIENTES</h2>
-            <div class="tabla-de-caracteres">
-                <a href="personajes/smoglers.html" class="enlace-de-carácter">
-                    <div class="tarjeta-de-personaje">
-                        <img src="imagenes/logo-smoglers.png" alt="Smoglers">
-                        <h3>Smoglers</h3>
-                    </div>
-                </a>
-                <a href="personajes/dash.html" class="enlace-de-carácter">
-                    <div class="tarjeta-de-personaje">
-                        <img src="imagenes/logo-dash.jpg" alt="Dash">
-                        <h3>Dash</h3>
-                    </div>
-                </a>
-                <a href="personajes/akuma.html" class="enlace-de-carácter">
-                    <div class="tarjeta-de-personaje">
-                        <img src="imagenes/logo-akuma.png" alt="Akuma">
-                        <h3>Akuma</h3>
-                    </div>
-                </a>
-                <a href="personajes/talon-11.html" class="enlace-de-carácter">
-                    <div class="tarjeta-de-personaje">
-                        <img src="imagenes/logo-talon-11.png" alt="Talon-11">
-                        <h3>Talon-11</h3>
-                    </div>
-                </a>
-                <a href="personajes/crt.html" class="enlace-de-carácter">
-                    <div class="tarjeta-de-personaje">
-                        <img src="imagenes/logo-crt.jpg" alt="CRT">
-                        <h3>CRT</h3>
-                    </div>
-                </a>
-                <a href="personajes/cookie.html" class="enlace-de-carácter">
-                    <div class="tarjeta-de-personaje">
-                        <img src="imagenes/logo-cookie.jpg" alt="Cookie">
-                        <h3>Cookie</h3>
-                    </div>
-                </a>
-                <a href="personajes/holly.html" class="enlace-de-carácter">
-                    <div class="tarjeta-de-personaje">
-                        <img src="imagenes/logo-holly.png" alt="Holly">
-                        <h3>Holly</h3>
-                    </div>
-                </a>
-                <a href="personajes/nueve.html" class="enlace-de-carácter">
-                    <div class="tarjeta-de-personaje">
-                        <img src="https://via.placeholder.com/300" alt="Nueve">
-                        <h3>Nueve</h3>
-                    </div>
-                </a>
+        <aside class="columna-lateral-izquierda"></aside>
+
+        <main class="columna-central">
+
+            <header>
+                <div class="tarjeta-contenido-principal">
+                    <h1>COMPROMISED DIMENSION</h1>
+                    <p class="descripcion">
+                        Bienvenido a Compromised Dimension, una brutal experiencia de terror asimétrico 8v1.
+                        <br>
+                        Un único y poderoso Asesino debe dar caza a un escuadrón de hasta ocho Supervivientes en partidas frenéticas y de tiempo limitado.
+                        <br>
+                        Tu supervivencia es una carrera contra el reloj.
+                        <br>
+                        <strong>A LOS 80 SEGUNDOS</strong>
+                        <br>
+                        las Brechas de escape se abren, ofreciendo la primera oportunidad de huir. Si no logras escapar por ellas, deberás encontrar una salida alternativa antes de que el Asesino acabe contigo.
+                        <br>
+                        Elige tu rol y selecciona un personaje de un amplio elenco.
+                        <br>
+                        Cada Superviviente y Asesino cuenta con habilidades únicas que definen tu estilo de juego y estrategia.
+                        <br>
+                        <strong>¿Cazarás o serás cazado?</strong>
+
+                    </p>
                 </div>
-        </section>
+            </header>
 
-        <section id="killers">
-            <h2>ASESINOS</h2>
-            <div class="tabla-de-caracteres">
-                <a href="personajes/faker.html" class="enlace-de-carácter">
-                    <div class="tarjeta-de-personaje killer">
-                        <img src="imagenes/logo-faker.png" alt="Mimi o Faker">
-                        <h3>Mimi / Faker</h3>
-                    </div>
-                </a>
-                 <a href="personajes/sm-exe.html" class="enlace-de-carácter">
-                    <div class="tarjeta-de-personaje killer">
-                        <img src="imagenes/logo-sm.exe.jpeg" alt="SM.exe">
-                        <h3>SM.exe</h3>
-                    </div>
-                </a>
-                 <a href="personajes/milena-nova.html" class="enlace-de-carácter">
-                    <div class="tarjeta-de-personaje killer">
-                        <img src="imagenes/logo-milena nova.jpg" alt="Milena Nova">
-                        <h3>Milena Nova</h3>
-                    </div>
-                </a>
-                 <a href="personajes/prj1.html" class="enlace-de-carácter">
-                    <div class="tarjeta-de-personaje killer">
-                        <img src="imagenes/logo-prj1.jpg" alt="PRJ1">
-                        <h3>PRJ1</h3>
-                    </div>
-                </a>            
+            <div class="contenedor-menu-principal">
+                <div class="cuadricula-menu">
+                    <a href="asesinos-index.html" class="boton-menu">
+                        <img src="imagenes/icono-asesinos.png" alt="Icono de Asesinos">
+                        <span>Asesinos</span>
+                    </a>
+                    <a href="supervivientes-index.html" class="boton-menu">
+                        <img src="imagenes/icono-supervivientes.png" alt="Icono de Supervivientes">
+                        <span>Supervivientes</span>
+                    </a>
+                    <a href="#" class="boton-menu">
+                        <img src="imagenes/icono-logros.png" alt="Icono de Logros">
+                        <span>Logros</span>
+                    </a>
+                    <a href="#" class="boton-menu">
+                        <img src="imagenes/icono-mapas.png" alt="Icono de Mapas">
+                        <span>Mapas</span>
+                    </a>
+                    <a href="#" class="boton-menu">
+                        <img src="imagenes/icono-lore.png" alt="Icono de Lore">
+                        <span>Lore</span>
+                    </a>
+                </div>
             </div>
-        </section>
-    </main>
 
+        </main> 
+            <aside class="modulo-barra-lateral">
+                <a href="#" class="boton-lateral">Reglas</a>
+                <a href="#" class="boton-lateral">Staff</a>
+                <a href="#" class="boton-lateral">Editar Manual</a>
+                <a href="#" class="boton-lateral">Discord Oficial</a>
+                <a href="#" class="boton-lateral">Twitter</a>
+            </aside>
+    </div> 
 </body>
 </html>

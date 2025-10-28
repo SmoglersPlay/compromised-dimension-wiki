@@ -1,0 +1,66 @@
+/* --- ESTILOS GLOBALES Y BASE --- */
+html {
+    /* Define el desplazamiento suave para los enlaces de ancla (ej. #supervivientes) */
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Color de fondo base para todas las páginas */
+    background-color: #121212;
+    /* Color de texto principal */
+    color: #e0e0e0;
+    /* Fuente por defecto para todo el texto */
+    font-family: 'Roboto', sans-serif;
+    /* Resetea el margen y padding por defecto del navegador */
+    margin: 0;
+    padding: 0;
+    /* Centra el texto por defecto (aunque puede ser sobreescrito) */
+    text-align: center;
+}
+
+/* --- BARRA DE NAVEGACIÓN (Estilos de tu style.css) --- */
+.navbar {
+    /* Fondo de la barra de navegación */
+    background-color: #000000;
+    /* Relleno interno */
+    padding: 5px;
+    /* Borde inferior con tu color cian/azul */
+    border-bottom: 2px solid #50ebff;
+    /* Alineación del texto (la usabas para justificar) */
+    text-align: justify;
+    /* Posición (no estaba en uso, pero 'sticky' sería una buena opción) */
+    top: 0;
+}
+
+.navbar li { 
+    /* Coloca los elementos de la lista en una línea horizontal */
+    display: inline-block; 
+    /* Margen entre los elementos */
+    margin: 0 1px; 
+}
+
+.navbar a {
+    /* Color del texto del enlace */
+    color: #e0e0e0;
+    /* Quita el subrayado por defecto */
+    text-decoration: none;
+    /* Fuente especial para la barra de navegación */
+    font-family: 'Chakra Petch', sans-serif;
+    /* Tamaño de fuente */
+    font-size: 1.2em;
+    padding: 10px;
+    /* Animación suave para el cambio de color */
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover { 
+    /* Color al pasar el ratón por encima */
+    color: #ff4d4d; 
+}
+
+.navbar a.nav-brand { 
+    /* Estilos específicos para tu "logo" o marca */
+    font-size: 40px; 
+    font-weight: bold; 
+    color: #87ffeb; 
+}

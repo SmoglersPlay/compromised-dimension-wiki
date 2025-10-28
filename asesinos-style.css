@@ -1,0 +1,85 @@
+/* --- ESTILOS DE CUADRÍCULA DE PERSONAJES --- */
+
+/* Enlace para "Volver al Inicio" */
+.ala-izquierda {
+    text-align: left;
+}
+.enlace-de-retroceso {
+    display: inline-block;
+    margin: 20px;
+    padding-top: 80px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.enlace-de-retroceso:hover { 
+    text-decoration: underline; 
+}
+
+/* Título de la sección (ej. "SUPERVIVIENTES") */
+h2 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2.5em;
+    color: #fff;
+    border-bottom: 2px solid #b71c1c;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+/* La cuadrícula que contiene las tarjetas */
+.tabla-de-caracteres {
+    display: grid;
+    /* Crea columnas automáticas que tienen un mínimo de 280px */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px; /* Espacio entre tarjetas */
+    max-width: 1200px; /* Ancho máximo de la cuadrícula */
+    margin: 0 auto; /* Centra la cuadrícula */
+}
+
+/* La tarjeta individual de cada personaje */
+.tarjeta-de-personaje {
+    background-color: #1f1f1f;
+    border: 2px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    /* Animación suave para el efecto de 'hover' */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* El enlace que envuelve la tarjeta */
+.enlace-de-carácter { 
+    text-decoration: none; 
+}
+
+/* Efecto al pasar el ratón sobre el enlace */
+.enlace-de-carácter:hover .tarjeta-de-personaje {
+    /* Mueve la tarjeta hacia arriba */
+    transform: translateY(-10px);
+    /* Cambia el color del borde al color de acento */
+    border-color: #ff4d4d;
+}
+
+.tarjeta-de-personaje img { 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+    border: 1px solid #333;
+}
+
+/* Nombre del superviviente en la tarjeta */
+.tarjeta-de-personaje .nombre-superviviente {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #87ffeb; /* Tu color cian/azul */
+    font-size: 1.8em;
+    margin: 15px 0 10px;
+}
+
+/* Nombre del asesino en la tarjeta */
+.tarjeta-de-personaje .nombre-asesino {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #ff1717; /* Tu color rojo */
+    font-size: 1.8em;
+    margin: 15px 0 10px;
+}

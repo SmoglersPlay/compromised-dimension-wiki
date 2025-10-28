@@ -1,257 +1,125 @@
-.nombre-personaje .cat-centinela { color: #fa0c0c; }
-.nombre-personaje .cat-tramperos { color: #ff7b00; }
-.nombre-personaje .cat-versatiles { color: #206eff; }
-.nombre-personaje .cat-apoyo { color: #15ff00; }
-/* --- ESTILOS GLOBALES Y BASE --- */
-html {
-    scroll-behavior: smooth;
-}
-body {
-    background-color: #121212;
-    color: #e0e0e0;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+/* --- ESTILOS DE PÁGINA PRINCIPAL (DISEÑO FANDOM) --- */
+
+.cuerpo-principal {
+    /* Fondo temático de la wiki, inspirado en FANDOM */
+    background: url('imagenes/dimencional.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
-/* --- BARRA DE NAVEGACIÓN --- */
-.navbar {
-    background-color: #000;
-    padding: 10px 20px;
-    border-bottom: 2px solid #b71c1c;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-.navbar ul { 
-    margin: 0; padding: 0; list-style: none; 
-}
-.navbar li { 
-    display: inline-block; margin: 0 15px; 
-}
-.navbar a {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 1.2em;
-    padding: 10px;
-    transition: color 0.3s ease;
-}
-.navbar a:hover { 
-    color: #ff4d4d; 
-}
-.navbar a.nav-brand { 
-    font-size: 1.5em; font-weight: bold; color: #fff; 
-}
+/* --- ESTRUCTURA DE 3 COLUMNAS --- */
 
-/* --- ENCABEZADO DE LA PÁGINA PRINCIPAL --- */
-header {
-    padding: 80px 20px 40px 20px;
-    background-color: #000;
-    border-bottom: 3px solid #b71c1c;
-}
-header h1 {
-    font-family: 'Chakra Petch', sans-serif;
-    color: #ff4d4d;
-    font-size: 3.5em;
-    text-shadow: 0 0 10px #ff0000;
-    margin: 0;
-}
-.descripcion {
-    max-width: 800px;
-    margin: 15px auto;
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-/* --- SECCIONES DE PERSONAJES (PÁGINA PRINCIPAL) --- */
-section { 
-    padding: 40px 20px; 
-}
-h2 {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 2.5em;
-    color: #fff;
-    border-bottom: 2px solid #b71c1c;
-    display: inline-block;
-    padding-bottom: 10px;
-    margin-bottom: 40px;
-}
-.tabla-de-caracteres {
+.contenedor-wiki-principal {
+    /* Usamos CSS Grid para crear las 3 columnas */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.tarjeta-de-personaje {
-    background-color: #1f1f1f;
-    border: 2px solid #444;
-    border-radius: 8px;
-    padding: 20px;
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-.enlace-de-carácter { 
-    text-decoration: none; 
-}
-.enlace-de-carácter:hover .tarjeta-de-personaje {
-    transform: translateY(-10px);
-    border-color: #ff4d4d;
-}
-.tarjeta-de-personaje img { max-width: 100%; height: auto; border-radius: 5px; border: 1px solid #333; }
-.tarjeta-de-personaje h3 {
-    font-family: 'Chakra Petch', sans-serif;
-    color: #ff4d4d;
-    font-size: 1.8em;
-    margin: 15px 0 10px;
+    /* Define 3 columnas: Lateral Izquierda, Central (flexible), Lateral Derecha */
+    /* Ajusta los anchos (ej. 200px 1fr 250px) si quieres barras laterales visibles */
+    grid-template-columns: 1fr; /* Por ahora, 1 columna central para simplicidad */
+    max-width: 1400px; /* Ancho máximo de la wiki */
+    margin: 20px auto; /* Centra el contenedor principal */
+    gap: 20px; /* Espacio entre las columnas */
 }
 
-/* --- PÁGINA DE DETALLE DE PERSONAJE --- */
-.cuerpo-página-personaje { 
-    text-align: left; 
-}
-.enlace-de-retroceso {
-    display: inline-block;
-    margin: 20px;
-    padding-top: 80px;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-family: 'Chakra Petch', sans-serif;
-}
-.enlace-de-retroceso:hover { 
-    text-decoration: underline; 
-}
-.contenedor-detalle-carácter {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #1a1a1a;
+/* --- COLUMNA CENTRAL (Donde vive tu contenido) --- */
+.columna-central {
+    /* Fondo oscuro para la columna de contenido principal */
+    background-color: rgba(0, 0, 0, 0.75); /* Fondo negro semi-transparente */
     border: 1px solid #333;
-    border-radius: 8px;
+    padding: 30px;
 }
-.cabecera-de-carácter {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    border-bottom: 2px solid #b71c1c;
-    padding-bottom: 20px;
+
+/* --- MÓDULOS DE CONTENIDO (Como en FANDOM) --- */
+
+/* Estilo para la tarjeta de descripción (tu <header>) */
+.tarjeta-contenido-principal {
+    background-color: #1a1a1a; /* Fondo del módulo de descripción */
+    padding: 20px;
+    /* Borde rojo de acento, como en la wiki de Forsaken */
+    border-bottom: 2px solid #b71c1c; 
     margin-bottom: 20px;
 }
-.imagen-principal-personaje {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #444;
-}
-/* === ESTILOS BASE PARA EL TÍTULO Y SUBTÍTULO (CORREGIDO) === */
-.nombre-personaje h1 {
+
+/* Título del juego (tu <h1> dentro de <header>) */
+.tarjeta-contenido-principal h1 {
     font-family: 'Chakra Petch', sans-serif;
+    color: #02fff2;
     font-size: 5em;
+    text-shadow: 0 0 10px #1100ff;
     margin: 0;
-    line-height: 1;
-}
-.nombre-personaje p { /* Regla única y clara para la categoría/subtítulo */
-    font-size: 2em;
-    font-weight: bold;
-    margin: 5px 0 0;
-    color: #aaa; /* Color por defecto si no tiene clase de categoría */
 }
 
-.información-del-personaje h2 {
-    color: #87CEEB;
-}
-.texto-lore { 
-    font-size: 1.1em; line-height: 1.7; text-align: justify; 
-}
-.lista-de-habilidades .habilidad-objeto {
-    background-color: #252525;
-    border-left: 4px solid #0c4bfa;
-    padding: 15px 20px;
-    margin-bottom: 15px;
-    border-radius: 0 5px 5px 0;
-}
-.lista-de-habilidades h3 {
-    color: #14fa0c; /* Verde "Activo" */
-    font-size: 1.5em; /* Le devolvemos su tamaño */
-    margin: 0 0 5px 0; /* Y su margen para mejor espaciado */
-}
-/* --- ESTILOS ADICIONALES PARA DETALLES DE HABILIDADES --- */
-.habilidad-objeto .texto-descriptivo {
-    font-style: italic;
-    color: #aaa;
-    margin-bottom: 15px;
-    font-size: 15px;
-    border-left: 2px solid #555;
-    padding-left: 10px;
-}
-.habilidad-objeto .cooldown { 
-    font-size: 0.7em; color: #ccc; font-weight: normal; 
-}
-.habilidad-objeto ul { 
-    list-style-type: '» '; padding-left: 20px; margin-top: 10px; 
-}
-.habilidad-objeto li { 
-    padding-left: 10px; margin-bottom: 8px; 
+/* Descripción del juego (tu <p class="descripcion">) */
+.tarjeta-contenido-principal .descripcion {
+    max-width: 1150px;
+    margin: 10px auto;
+    font-size: 1.2em;
+    line-height: 1.3;
+    color: #e0e0e0;
 }
 
-/*
-=====================================================
-==== TEMAS PERSONALIZADOS PARA CADA PERSONAJE =======
-=====================================================
-*/
-
-/* --- TEMA SMOGLERS --- */
-.tema-smoglers {
-    background: linear-gradient(to bottom, #000000, #FFC300);
-    background-attachment: fixed;
-}
-.tema-smoglers .nombre-personaje h1 {
-    color: #FFC300;
-    text-shadow: 0 0 8px #ffc300c0, 0 0 12px #ffc300a0;
-}
-.tema-smoglers .cabecera-de-carácter {
-    border-bottom-color: #FFC300;
+/* Contenedor del menú de botones (tu <div class="contenedor-menu-principal">) */
+.contenedor-menu-principal {
+    /* No necesitamos las reglas de flexbox aquí, ya que está dentro de la columna central */
+    padding: 20px;
 }
 
-/* --- TEMA AKUMA --- */
-.tema-akuma {
-    background: linear-gradient(to bottom, #000000, #ffffff);
-    background-attachment: fixed;
-}
-.tema-akuma .nombre-personaje h1 {
-    color: #ffffff;
-    text-shadow: 0 0 8px #718b92c0, 0 0 12px #404d50a0;
-}
-.tema-akuma .cabecera-de-carácter {
-    border-bottom-color: #ffffff;
+/* Cuadrícula de botones (tu <div class="cuadricula-menu">) */
+.cuadricula-menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 botones en una fila */
+    gap: 25px;
+    max-width: 1400px;
+    width: 100%; /* Ocupa todo el ancho de la columna central */
 }
 
-/* --- TEMA AKUMA --- */
-.tema-dash {
-    background: linear-gradient(to bottom, #000000, #ff0055);
-    background-attachment: fixed;
-}
-.tema-dash .nombre-personaje h1 {
-    color: #ff0055;
-    text-shadow: 0 0 8px #ff0022c0, 0 0 12px #e729f8a0;
-}
-.tema-dash .cabecera-de-carácter {
-    border-bottom-color: #ffffff;
+/* Estilo de los botones (tu <a class="boton-menu">) */
+.boton-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    height: 150px;
 }
 
-/* --- DISEÑO RESPONSIVO --- */
-@media (max-width: 600px) {
-    .cabecera-de-carácter { 
-        flex-direction: column; text-align: center; 
+.boton-menu img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+    filter: invert(100%); /* Hace tus iconos negros -> blancos */
+}
+
+.boton-menu:hover {
+    transform: translateY(-5px) scale(1.02);
+    border-color: #ff4d4d;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 30px rgba(255, 0, 0, 0.5);
+    color: #ff4d4d;
+}
+
+/* --- BARRAS LATERALES (Inspirado en FANDOM) --- */
+.columna-lateral-derecha, .columna-lateral-izquierda {
+    /* Oculto por defecto, pero puedes darles estilo si cambias la grid-template-columns */
+    display: none; 
+}
+
+/* --- DISEÑO RESPONSIVO (Ajustes para móviles) --- */
+@media (max-width: 768px) {
+    .cuadricula-menu {
+        /* Los botones se apilan en 2 columnas en pantallas pequeñas */
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 10px;
     }
-    .cuerpo-página-personaje { 
-        text-align: center; 
-    }
-    .texto-lore { 
-        text-align: left; 
+    .boton-menu {
+        font-size: 1em;
+        height: 120px;
     }
 }
